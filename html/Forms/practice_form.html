@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form >
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" name="full_name" placeholder="Enter full name." required id="name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" required id="password" minlength="8">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter exactly 10 digit phone number">
+
+            <br><br>
+
+
+            <p>Gender</p>
+            <input type="radio" name="gender" required value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+
+            <br><br>
+
+            <p>Skills</p>
+            <input type="checkbox" name="skills" required value="HTML">HTML
+            <input type="checkbox" name="skills" value="CSS">CSS
+            <input type="checkbox" name="skills" value="JS">JS
+            <input type="checkbox" name="skills" value="Tailwind">Tailwind
+
+            <br><br>
+
+
+            <label for="education">Education</label>
+            <select name="education" id="education">
+                <option value="" disabled selected>Select Education</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Masters">Masters</option>
+                <option value="PhD">PhD</option>
+            </select>
+
+            <br><br>
+
+
+            <label for="about">About</label>
+            <textarea name="about" rows="5" id="about" placeholder="About yourself..."></textarea>
+
+
+            <br><br>
+
+            <label for="file">Resume</label>
+            <input type="file" name="resume" id="file">
+
+
+            <br><br>
+
+
+            <label for="terms">Terms and Conditions</label>
+            <input type="checkbox" required name="terms">I agree to the terms and conditions
+
+
+            <br><br>
+
+            <button type="reset">Reset</button>
+            <br>
+            <button type="submit">Submit</button>
+
+
+        </fieldset>
+
+
+
+    </form>
+</body>
+</html>
