@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Anchor Tag - &lt;a&gt;</h1>
+    <br>
+
+    <p>It is used to create:</p>
+    <ul>
+        <li>Links to webpages.</li>
+        <li>Links to files.</li>
+        <li>Links to sections within the pages.</li>
+        <li>Emails,phone call,download</li>
+    </ul>
+
+    <br>
+
+    <h3>href - Hypertext Reference</h3>
+    <p>Specifies Destination of the link.</p>
+
+
+    <br>
+
+    <h3>target Attribute </h3>
+    <p>target="_blank" -  Opens link in new Tab</p>
+    <p>target="_self" -  Opens link in same Tab</p>
+
+    <br>
+
+    <h3>download </h3>
+    <p>downloads file</p>
+    <p>&lt;a&gt; href="file.pdf" download &lt;a&gt;</p>
+
+
+
+    <br>
+
+    <h3>Email </h3>
+    <p>opens email app</p>
+    <p>&lt;a&gt; href="mailto:test@gmail.com" Send mail &lt;a&gt;</p>
+    <br>
+
+    <h3>phone </h3>
+    <p>used to call</p>
+    <p>&lt;a&gt; href="tel:+91999999" Call us &lt;a&gt;</p>
+
+
+    <br>
+
+    <h3>rel Attribute in HTML</h3>
+    <p>The rel attribute describes the relationship between the current page and the linked resource.</p> <br>
+    <p>rel helps with security,privacy,SEO,performance.</p><br>
+
+    <br>
+
+    <h4>Problem Without rel</h4><br>
+    <p> when a tag opens a new tab , the new page can access your original page using JS. Which typically happens through window.opener, This is called <strong>Reverse Tabnabbing</strong></p>
+
+
+    <br>
+
+
+    <h4>Solution - noopener</h4>
+    <br>
+    <p>rel="noopener"  -  Prevents new page from accessing window.opener </p> <br>
+    <p>With noopener - window.opener = null</p><br>
+    <p>Without noopener - window.opener = original tab</p> 
+
+
+    <br>
+
+    <h4>noreffer - Does two things</h4>
+    <br>
+    <p>It hides referrer info. When user click a link , the Destination web receives info like which page user came from and URL of page.</p>
+    <p>This is called referrer info.</p>
+
+    <p>Norefferer solves this so destination does not know where user came from.</p>
+
+
+    <br>
+
+    <p>It also behaves as <em>noopener</em></p>
+    <p>Norefferer also blocks window.opener</p>
+
+
+
+</body>
+</html>
