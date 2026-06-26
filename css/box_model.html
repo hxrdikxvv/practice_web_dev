@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Box Model</h1>
+    </header>
+
+
+    <main>
+        <h2>CSS BOX MODEL</h2>
+        <p>Every HTML element is treated like a rectangular box.</p>
+        <br>
+        <p>A box contains:</p>
+        <ol>
+            <li>content</li>
+            <li>padding</li>
+            <li>border</li>
+            <li>margin</li>
+        </ol>
+
+        <br><br>
+    </main>
+
+    <section>
+        <h3>Parts of box model</h3><br>
+        <h4>Content</h4>
+        <p>Actual image/text inside element.</p>
+        <p> examples: <br>width:200px;<br> height:100px;</p>   <br> <br>
+
+        <h4>Padding</h4>
+        <p>Space INSIDE the element around content.</p>
+        <p> examples: <br> padding:20px;</p>    <br><br>
+
+
+        <h4>Border</h4>
+        <p>Boundary around padding/content.</p>
+        <p> examples: <br> border:2px;</p>    <br><br>
+
+
+        <h4>Margin</h4>
+        <p>space outside element</p>
+        <p> examples: <br> margin:20px;</p>    <br><br>
+
+    </section>
+
+    <br>
+
+    <section>
+        <h3>Important </h3>
+        <br>
+        <p>By default css width only controls the content area.</p>
+        <br>
+        <p>Default behavior is <br>
+            box-sizing: content-box; <br>
+            which means: Final width = content + padding + border.
+        </p>
+
+        <br>
+        <h4>VISUAL BREAKDOWN</h4>
+        <p>| border | padding | CONTENT(200px) | padding | border |</p>
+
+        <h4>problem is : </h4>
+        <p>suppose you have width:50% and padding 20px; <br>
+            Now element bigger than 50%.
+        </p>
+
+
+        <h4>ENTER box-sizing:border-box</h4>
+        <p>
+            .box{ <br>
+    width:200px; <br>
+    padding:20px; <br>
+    border:10px solid black; <br>
+    box-sizing:border-box; <br>
+}
+        </p>
+
+        <br>
+        <p>total width:200px;</p>
+
+        <br><br>
+
+        <p>200px total width <br>
+- 40px padding <br>
+- 20px border <br>
+-------------------  <br>
+140px content area
+</p>
+
+
+    </section>
+
+    
+
+</body>
+</html>
